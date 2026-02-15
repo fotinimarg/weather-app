@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+body {
+  padding: 70px;
+  background-color: chocolate;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,
+search {
+  text-align: center;
+  color: white;
+}
+
+input {
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-webkit-search-cancel-button {
+  position: relative;
+  right: 1px;
+
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg)
+    no-repeat 50% 50%;
+  background-size: contain;
+  opacity: 40%;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+button {
+  padding: 4px 20px;
+  margin-top: 8px;
+  background-color: beige;
+  color: chocolate;
+  border: none;
+  border-radius: 8px;
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
